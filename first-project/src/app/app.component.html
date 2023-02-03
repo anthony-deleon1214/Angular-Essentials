@@ -1,0 +1,9 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!!
+  </h1>
+</div>
+<p>Some text!</p>
+<app-cart [items]="itemList" (addItem)="onAddItem($event)"></app-cart>
+<app-user [name]="rootName" (nameChanged)="onNameChanged($event)"></app-user>
+<dashboard></dashboard>
