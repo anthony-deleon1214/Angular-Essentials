@@ -7,9 +7,10 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class CartComponent {
   @Input() items = [];
-  @Output() addItem = new EventEmitter<string>();
+  newItem = '';
+  @Output() addedItem = new EventEmitter<string>();
 
-  onClick(event) {
-    this.addItem.emit(event.target.value)
+  onAddItem() {
+    this.addedItem.emit(this.newItem)
   }
 }

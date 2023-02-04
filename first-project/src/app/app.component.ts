@@ -16,5 +16,6 @@ export class AppComponent {
 
   onAddItem(newItem) {
     this.itemList.push(newItem)
+    console.log(this.itemList)
   }
 }
